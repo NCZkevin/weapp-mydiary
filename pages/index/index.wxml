@@ -6,7 +6,7 @@
       <view class="swiper-tab-list">
         <navigator url="/pages/index/index" open-type="redirect">浏览</navigator>
       </view>
-      <view class="swiper-tab-list" >
+      <view class="swiper-tab-list">
         <navigator url="/pages/calendar/calendar" open-type="redirect">日历</navigator>
       </view>
       <view class="swiper-tab-list1">
@@ -16,7 +16,7 @@
   </view>
   <view class="diary-list">
     <block>
-      <view class="diary-item">
+      <view class="diary-item" bindtap="showDiary">
         <view class="diary-time">
           <view class="day">30</view>
           <view class="month">五</view>
@@ -69,5 +69,18 @@
         </view>
       </view>
     </block>
+  </view>
+  <view class="tool-list">
+    <view class="content">
+      <view class="left-tool">
+        <image src="/images/ic_menu_white_24dp.png"></image>
+        <image src="/images/ic_mode_edit_white_24dp.png"></image>
+        <image src="/images/ic_photo_camera_white_24dp.png"></image>
+      </view>
+          <view class="diary-num">
+      5项目
+    </view>
+    </view>
+
   </view>
 </view>

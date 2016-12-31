@@ -1,3 +1,32 @@
 /**index.wxss**/
 
+.tool-list {
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80rpx;
+    background-color: #67B5E6;
+}
 
+.content {
+    display: flex;
+}
+.left-tool {
+    flex: 1;
+    display: inline-block;
+}
+
+.left-tool image {
+  width: 60rpx;
+  height: 60rpx;
+  padding: 10rpx;
+}
+
+.diary-num {
+    flex: 0 0 120rpx;
+    font-size: 40rpx;
+    color: #FFFFFF;
+    line-height: 80rpx;
+}
