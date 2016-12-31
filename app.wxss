@@ -1,0 +1,158 @@
+/**app.wxss**/
+/*page {
+  background: url("/images/theme_bg_taki1.png") no-repeat;
+  background-size: 100% 100%;
+}*/
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: url("/images/theme_bg_taki1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+}
+
+.top-tab {
+  background: #FFFFFF;
+  height: 80rpx;
+}
+
+.swiper-tab {
+  font-size: 32rpx;
+  width: 92%;
+  border: 2rpx solid #6F9AB8;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 60rpx;
+  margin:  auto ;
+}
+
+.swiper-tab-list {
+  display: inline-block;
+  width: 33%;
+  color: #6F9AB8;
+  border-right: 1rpx solid #6F9AB8;
+}
+.swiper-tab-list1 {
+  display: inline-block;
+  width: 33%;
+  color: #6F9AB8;
+}
+/*.on {
+  color: #da7c0c;
+  border-bottom: 5rpx solid #da7c0c;
+}*/
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*.swiper-box view {
+  text-align: center;
+}*/
+
+.diary-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5% 0;
+}
+
+.diary-item {
+  display: flex;
+  width: 93%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 1px 1px 10px #F8F8F8;
+  margin: 1% auto;
+  flex-direction: row;
+  color: #437AA3;
+}
+
+.diary-time {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.day {
+  font-size: 64rpx;
+  font-weight: 300;
+  margin: 10rpx 0;
+}
+.month {
+  font-size: 28rpx;
+  font-weight: 50;
+}
+
+.diary-detail {
+  flex: 3;
+  font-size: 28rpx;
+  padding: 20rpx;
+}
+.diary-dtime {
+  margin-bottom: 10rpx;
+}
+
+.diary-title {
+  margin-bottom: 10rpx;
+}
+
+.icon-list {
+  flex: 1;
+  padding: 20rpx;
+  color: #437AA3;
+}
+
+.icon-list image {
+  width: 20rpx;
+  height: 20rpx;
+  padding: 10rpx;
+}
+
+
+.calendar {
+  height: 60%;
+  background:  #FFFFFF;
+  color: #437AA3;
+  border-top: 2rpx solid #437AA3;
+  /*box-shadow: 0 -20px 0 0 #000000;*/
+  text-align: center;
+}
+
+.c-month {
+  font-size: 80rpx;
+  margin-top: 80rpx;
+}
+
+.c-day {
+  font-size: 160rpx;
+  margin-top: 80rpx;
+  font-weight: 900;
+}
+
+.c-week {
+  font-size: 48rpx;
+  margin-top: 80rpx;
+}
+
+.editor {
+  height: 100%;
+}
+
+.e-time {
+  background-color: #437AA3;
+  height: 20%;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 40rpx;
+}
+
+.editor {
+  background-color: #FFFFFF;
+  height: 100%;
+}

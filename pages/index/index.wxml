@@ -1,0 +1,73 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view class="top-tab">
+    <view class="swiper-tab">
+      <view class="swiper-tab-list">
+        <navigator url="/pages/index/index" open-type="redirect">浏览</navigator>
+      </view>
+      <view class="swiper-tab-list" >
+        <navigator url="/pages/calendar/calendar" open-type="redirect">日历</navigator>
+      </view>
+      <view class="swiper-tab-list1">
+        <navigator url="/pages/editor/editor" open-type="redirect">今天</navigator>
+      </view>
+    </view>
+  </view>
+  <view class="diary-list">
+    <block>
+      <view class="diary-item">
+        <view class="diary-time">
+          <view class="day">30</view>
+          <view class="month">五</view>
+        </view>
+        <view class="diary-detail">
+          <view class="diary-dtime">19:17</view>
+          <view class="diary-title">东京生活三</view>
+          <view class="diary-content">三人水族馆</view>
+        </view>
+        <view class="icon-list">
+          <image src="/images/ic_weather_sunny.png"></image>
+          <image src="/images/ic_mood_happy.png"></image>
+          <image src="/images/ic_bookmark_border.png"></image>
+        </view>
+      </view>
+    </block>
+    <block>
+      <view class="diary-item">
+        <view class="diary-time">
+          <view class="day">30</view>
+          <view class="month">五</view>
+        </view>
+        <view class="diary-detail">
+          <view class="diary-dtime">19:17</view>
+          <view class="diary-title">东京生活三</view>
+          <view class="diary-content">三人水族馆</view>
+        </view>
+        <view class="icon-list">
+          <image src="/images/ic_weather_sunny.png"></image>
+          <image src="/images/ic_mood_happy.png"></image>
+          <image src="/images/ic_bookmark_border.png"></image>
+        </view>
+      </view>
+    </block>
+    <block>
+      <view class="diary-item">
+        <view class="diary-time">
+          <view class="day">30</view>
+          <view class="month">五</view>
+        </view>
+        <view class="diary-detail">
+          <view class="diary-dtime">19:17</view>
+          <view class="diary-title">东京生活三</view>
+          <view class="diary-content">三人水族馆</view>
+        </view>
+        <view class="icon-list">
+          <image src="/images/ic_weather_sunny.png"></image>
+          <image src="/images/ic_mood_happy.png"></image>
+          <image src="/images/ic_bookmark_border.png"></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
