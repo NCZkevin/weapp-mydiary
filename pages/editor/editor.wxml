@@ -1,11 +1,10 @@
-
 <view class="container">
   <view class="top-tab">
     <view class="swiper-tab">
       <view class="swiper-tab-list">
         <navigator url="/pages/index/index" open-type="redirect">浏览</navigator>
       </view>
-      <view class="swiper-tab-list" >
+      <view class="swiper-tab-list">
         <navigator url="/pages/calendar/calendar" open-type="redirect">日历</navigator>
       </view>
       <view class="swiper-tab-list1">
@@ -20,8 +19,26 @@
       <view class="e-week">星期日</view>
     </view>
     <view class="main">
-      <input placeholder="标题" />
-      <view class="tool">正文</view>
+      <view class="e-title">
+        <input placeholder="标题" />
+      </view>
+      <view class="e-content">
+        <textarea placeholder="日记" />
+      </view>
+      <view class="e-tool">
+        <view class="left-tool">
+          <view class="e-icon">
+            <image src="/images/ic_mood_happy.png"></image>
+          </view>
+          <view class="e-weather">
+            <image src="/images/ic_weather_snowy.png"></image>
+          </view>
+        </view>
+        <view class="right-tool">
+          <view class="savetext">尚未保存</view>
+          <image src="/images/ic_save_white_24dp.png"></image>
+        </view>
+      </view>
     </view>
   </view>
 </view>
