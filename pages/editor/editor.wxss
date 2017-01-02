@@ -25,8 +25,15 @@
 
 .e-title {
     border: 2rpx solid #EFF2F7;
+    padding: 4rpx 4rpx;
 }
-
+.e-content {
+    padding: 4rpx 4rpx;
+}
+textarea {
+    width: 100%;
+    height: 700rpx;
+}
 .e-tool {
     background-color: #437AA3;
     position: fixed;
@@ -52,7 +59,7 @@
 }
 
 .right-tool {
-    flex: 0 0 260rpx;
+    flex: 0 0 230rpx;
 }
 
 .savetext {
