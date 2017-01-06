@@ -20,12 +20,16 @@
 }
 
 .main {
-    font-size: 36rpx;
+    font-size: 48rpx;
 }
 
 .e-title {
     border: 2rpx solid #EFF2F7;
     padding: 4rpx 4rpx;
+    height: 72rpx;
+}
+.e-title input {
+    height: 100%;
 }
 .e-content {
     padding: 4rpx 4rpx;
@@ -81,4 +85,5 @@ textarea {
     vertical-align: top;
     padding: 20rpx 0;
     display: inline-block;
+    font-size: 36rpx;
 }
