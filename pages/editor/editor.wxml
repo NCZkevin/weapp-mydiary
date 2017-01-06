@@ -28,7 +28,7 @@
       <view class="e-tool">
         <view class="left-tool">
           <view class="e-icon">
-            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{textArray}}">
               <view class="picker-icon">
                 <image src="{{array[index]}}"></image>
               </view>

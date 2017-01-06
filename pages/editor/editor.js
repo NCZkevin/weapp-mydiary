@@ -2,23 +2,20 @@
 const AV = require('../../utils/av-weapp-min.js')
 Page({
   data: {
-    array: ['/images/ic_mood_happy.png', '中国', '巴西', '日本'],
+    array: ['/images/ic_mood_happy.png', '/images/ic_mood_soso.png', '/images/ic_mood_unhappy.png'],
+    textArray: ['开心', '一般', '不开心'],
     objectArray: [
       {
         id: 0,
-        name: '笑脸'
+        name: '开心'
       },
       {
         id: 1,
-        name: '中国'
+        name: '一般'
       },
       {
         id: 2,
-        name: '巴西'
-      },
-      {
-        id: 3,
-        name: '日本'
+        name: '不开心'
       }
     ],
     index: 0,
