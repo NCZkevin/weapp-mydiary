@@ -20,22 +20,28 @@
     </view>
     <view class="main">
       <view class="e-title">
-        <input placeholder="标题" />
+        <input placeholder="标题" value="{{title}}" bindinput="updateTitle"  />
       </view>
       <view class="e-content">
-        <textarea placeholder="日记" />
+        <textarea placeholder="日记" value="{{content}}" bindinput="updateContent"  />
       </view>
       <view class="e-tool">
         <view class="left-tool">
           <view class="e-icon">
-            <image src="/images/ic_mood_happy.png"></image>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker-icon">
+                <image src="{{array[index]}}"></image>
+              </view>
+            </picker>
+
+            <!--<image src="/images/ic_mood_happy.png"></image>-->
           </view>
           <view class="e-weather">
             <image src="/images/ic_weather_snowy.png"></image>
           </view>
         </view>
         <view class="right-tool">
-          <view class="savetext">尚未保存</view>
+          <view class="savetext" ontap="saveDiary">尚未保存</view>
           <image src="/images/ic_save_white_24dp.png"></image>
         </view>
       </view>
