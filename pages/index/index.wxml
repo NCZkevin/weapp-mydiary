@@ -3,13 +3,13 @@
 <view class="container">
   <view class="top-tab">
     <view class="swiper-tab">
-      <view class="swiper-tab-list">
+      <view class="swiper-tab-list" hover-class="hoverNav">
         <navigator url="/pages/index/index" open-type="redirect">浏览</navigator>
       </view>
-      <view class="swiper-tab-list">
+      <view class="swiper-tab-list" hover-class="hoverNav">
         <navigator url="/pages/calendar/calendar" open-type="redirect">日历</navigator>
       </view>
-      <view class="swiper-tab-list1">
+      <view class="swiper-tab-list1" hover-class="hoverNav">
         <navigator url="/pages/editor/editor" open-type="redirect">今天</navigator>
       </view>
     </view>

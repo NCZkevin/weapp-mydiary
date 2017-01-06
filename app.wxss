@@ -38,6 +38,10 @@
   width: 33%;
   color: #6F9AB8;
 }
+.hoverNav {
+    background: #67B5E6;
+    color: #FFFFFF;
+}
 /*.on {
   color: #da7c0c;
   border-bottom: 5rpx solid #da7c0c;

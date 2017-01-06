@@ -4,6 +4,8 @@ Page({
   data: {
     array: ['/images/ic_mood_happy.png', '/images/ic_mood_soso.png', '/images/ic_mood_unhappy.png'],
     textArray: ['开心', '一般', '不开心'],
+    weatherArray: ['晴','阴','雾','雨','雪','风'],
+    wiconArray: ['/images/ic_weather_sunny.png','/images/ic_weather_cloud.png','/images/ic_weather_foggy.png','/images/ic_weather_rainy.png','/images/ic_weather_snowy.png','/images/ic_weather_windy.png',],
     objectArray: [
       {
         id: 0,
@@ -19,6 +21,7 @@ Page({
       }
     ],
     index: 0,
+    w_index: 0,
     date: '2016-09-01',
     time: '12:01',
     title: '',
@@ -28,6 +31,12 @@ Page({
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       index: e.detail.value
+    })
+  },
+  bindWeatherChange: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      w_index: e.detail.value
     })
   },
   updateTitle: function ({

@@ -30,3 +30,8 @@
     color: #FFFFFF;
     line-height: 80rpx;
 }
+
+.hoverNav {
+    background-color: #67B5E6;
+    color: #FFFFFF;
+}

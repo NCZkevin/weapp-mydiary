@@ -20,10 +20,10 @@
     </view>
     <view class="main">
       <view class="e-title">
-        <input placeholder="标题" value="{{title}}" bindinput="updateTitle"  />
+        <input placeholder="标题" value="{{title}}" bindinput="updateTitle" />
       </view>
       <view class="e-content">
-        <textarea placeholder="日记" value="{{content}}" bindinput="updateContent"  />
+        <textarea placeholder="日记" value="{{content}}" bindinput="updateContent" />
       </view>
       <view class="e-tool">
         <view class="left-tool">
@@ -37,7 +37,11 @@
             <!--<image src="/images/ic_mood_happy.png"></image>-->
           </view>
           <view class="e-weather">
-            <image src="/images/ic_weather_snowy.png"></image>
+            <picker bindchange="bindWeatherChange" value="{{w_index}}" range="{{weatherArray}}">
+              <view class="weather-icon">
+                <image src="{{wiconArray[w_index]}}"></image>
+              </view>
+            </picker>
           </view>
         </view>
         <view class="right-tool">

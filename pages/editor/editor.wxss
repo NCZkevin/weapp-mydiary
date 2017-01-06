@@ -63,7 +63,9 @@ textarea {
 .e-weather {
     display: inline-block;
 }
-.picker-icon {
+.picker-icon image {
+    width: 50rpx;
+    height: 50rpx;
 }
 
 /*.e-tool view {
