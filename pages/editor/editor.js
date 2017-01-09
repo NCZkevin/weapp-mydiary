@@ -89,33 +89,38 @@ Page({
       url: '../index/index',
     })).catch(console.error);
   },
-changeStatus: function () {
-  this.setData({
-    saveStatus: '已经保存'
-  })
-},
-nowDate: function () {
-  var time = new Object();
-  var date = new Date();
-  var weekCn = new Array('日', '一', '二', '三', '四', '五', '六');
-  time.month = date.getMonth() + 1;
-  time.week = weekCn[date.getDay()];
-  time.day = date.getDate();
-  return time;
-},
-onLoad: function (options) {
-  // 页面初始化 options为页面跳转所带来的参数
-},
-onReady: function () {
-  // 页面渲染完成
-},
-onShow: function () {
-  // 页面显示
-},
-onHide: function () {
-  // 页面隐藏
-},
-onUnload: function () {
-  // 页面关闭
-}
+  changeStatus: function () {
+    this.setData({
+      saveStatus: '已经保存'
+    })
+  },
+  nowDate: function () {
+    var time = new Object();
+    var date = new Date();
+    var weekCn = new Array('日', '一', '二', '三', '四', '五', '六');
+    time.month = date.getMonth() + 1;
+    time.week = weekCn[date.getDay()];
+    time.day = date.getDate();
+    return time;
+  },
+  setting: function () {
+    wx.navigateTo({
+      url: '../setting/setting',
+    });
+  },
+  onLoad: function (options) {
+    // 页面初始化 options为页面跳转所带来的参数
+  },
+  onReady: function () {
+    // 页面渲染完成
+  },
+  onShow: function () {
+    // 页面显示
+  },
+  onHide: function () {
+    // 页面隐藏
+  },
+  onUnload: function () {
+    // 页面关闭
+  }
 })

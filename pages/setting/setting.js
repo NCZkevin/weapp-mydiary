@@ -1,19 +1,56 @@
-// pages/setting/setting.js
+const { User } = require('../../utils/av-weapp-min');
+
 Page({
-  data:{},
-  onLoad:function(options){
-    // 页面初始化 options为页面跳转所带来的参数
+  data: {
+    user: null,
+    username: '',
+    password: '',
+    error: null,
+    items: [
+      {name: 'girl', value: '女生'},
+      {name: 'boy', value: '男生', checked: 'true'},
+    ]
   },
-  onReady:function(){
-    // 页面渲染完成
+  onLoad: function() {
+    this.setData({
+      user: User.current(),
+    });
   },
-  onShow:function(){
-    // 页面显示
+  updateUsername: function ({
+    detail: {
+      value
+    }
+  }) {
+    this.setData({
+      username: value
+    });
   },
-  onHide:function(){
-    // 页面隐藏
+  updatePassword: function ({
+    detail: {
+      value
+    }
+  }) {
+    this.setData({
+      password: value
+    });
   },
-  onUnload:function(){
-    // 页面关闭
+  save: function () {
+    this.setData({
+      error: null,
+    });
+    const { username, password } = this.data;
+    const user = User.current();
+    if (username) user.set({ username });
+    if (password) user.set({ password });
+    user.save().then(() => {
+      wx.showToast({
+        title: '更新成功',
+        icon: 'success',
+      });
+    }).catch(error => {
+      this.setData({
+        error: error.message,
+      });
+    });
   }
-})
+});
