@@ -1,14 +1,41 @@
 //index.js
+const AV = require('../../utils/av-weapp-min.js');
+const Diary = require('../../model/diary')
 var app = getApp()
 Page({
   data: {
-    /** 
-        * 页面配置 
-        */
+    diarys: [],
+    num: 0,
     winWidth: 0,
     winHeight: 0,
-    // tab切换  
-    currentTab: 0,
+
+  },
+  loginAndFetchTodos: function () {
+    return AV.Promise.resolve(AV.User.current()).then(user =>
+      user ? (user.isAuthenticated().then(authed => authed ? user : null)) : null
+    ).then(user =>
+      user ? user : AV.User.loginWithWeapp()
+      ).then((user) => {
+        console.log('uid', user.id);
+        return new AV.Query(Diary)
+          .equalTo('user', AV.Object.createWithoutData('User', user.id))
+          .descending('createdAt')
+          .find()
+          .then(this.setDiary)
+          .catch(console.error);
+      }).catch(error => console.error(error.message));
+  },
+  onReady: function () {
+    console.log('page ready');
+    this.loginAndFetchTodos();
+  },
+  onPullDownRefresh: function () {
+    this.loginAndFetchTodos().then(wx.stopPullDownRefresh);
+  },
+  setDiary: function(diarys) {
+    this.setData({
+      diarys
+    })
   },
   onLoad: function () {
     var that = this;

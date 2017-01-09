@@ -46,7 +46,7 @@
           </view>
         </view>
         <view class="right-tool">
-          <view class="savetext" ontap="saveDiary">尚未保存</view>
+          <view class="savetext" ontap="saveDiary">{{saveStatus}}</view>
           <image src="/images/ic_save_white_24dp.png"></image>
         </view>
       </view>

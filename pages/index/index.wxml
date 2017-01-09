@@ -15,7 +15,14 @@
     </view>
   </view>
   <view class="diary-list">
-    <block>
+    <!--<block wx:for="{{diarys}}">
+        <view class="flex-wrap todo">
+          <text ontap="editTodo">
+            {{todo.title}}
+          </text>
+        </view>
+      </block>-->
+    <block wx:for = "{{diarys}}" wx:for-item="diary">
       <view class="diary-item" bindtap="showDiary">
         <view class="diary-time">
           <view class="day">30</view>
@@ -23,8 +30,8 @@
         </view>
         <view class="diary-detail">
           <view class="diary-dtime">19:17</view>
-          <view class="diary-title">东京生活三</view>
-          <view class="diary-content">三人水族馆</view>
+          <view class="diary-title">{{diary.title}}</view>
+          <view class="diary-content">{{diary.content}}</view>
         </view>
         <view class="icon-list">
           <image src="/images/ic_weather_sunny.png"></image>
@@ -33,7 +40,7 @@
         </view>
       </view>
     </block>
-    <block>
+    <!--<block>
       <view class="diary-item">
         <view class="diary-time">
           <view class="day">30</view>
@@ -68,7 +75,7 @@
           <image src="/images/ic_bookmark_border.png"></image>
         </view>
       </view>
-    </block>
+    </block>-->
   </view>
   <view class="tool-list">
     <view class="content">
@@ -77,10 +84,9 @@
         <image src="/images/ic_mode_edit_white_24dp.png"></image>
         <image src="/images/ic_photo_camera_white_24dp.png"></image>
       </view>
-          <view class="diary-num">
-      5项目
+      <view class="diary-num">
+        5项目
+      </view>
     </view>
-    </view>
-
   </view>
 </view>
