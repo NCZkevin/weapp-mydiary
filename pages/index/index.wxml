@@ -25,8 +25,8 @@
     <block wx:for = "{{diarys}}" wx:for-item="diary">
       <view class="diary-item" bindtap="showDiary">
         <view class="diary-time">
-          <view class="day">30</view>
-          <view class="month">五</view>
+          <view class="day">{{diary.day}}</view>
+          <view class="month">{{diary.month}}</view>
         </view>
         <view class="diary-detail">
           <view class="diary-dtime">19:17</view>
@@ -34,8 +34,8 @@
           <view class="diary-content">{{diary.content}}</view>
         </view>
         <view class="icon-list">
-          <image src="/images/ic_weather_sunny.png"></image>
-          <image src="/images/ic_mood_happy.png"></image>
+          <image src="{{diary.we_icon}}"></image>
+          <image src="{{diary.icon}}"></image>
           <image src="/images/ic_bookmark_border.png"></image>
         </view>
       </view>
@@ -85,7 +85,7 @@
         <image src="/images/ic_photo_camera_white_24dp.png"></image>
       </view>
       <view class="diary-num">
-        5项目
+        {{diarys.length}}项目
       </view>
     </view>
   </view>

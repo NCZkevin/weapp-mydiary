@@ -66,6 +66,10 @@ Page({
     // var diary = new Diary();
     var d_title = this.data.title;
     var d_content = this.data.content;
+    var index = this.data.index;
+    var w_index = this.data.w_index;
+    var icon = this.data.array[index];
+    var we_icon = this.data.wiconArray[index];
     var acl = new AV.ACL();
     acl.setPublicReadAccess(false);
     acl.setPublicWriteAccess(false);
@@ -74,7 +78,9 @@ Page({
     new Diary({
       title: d_title,
       content: d_content,
-      user: AV.User.current()
+      user: AV.User.current(),
+      icon: icon,
+      we_icon: we_icon,
     }).setACL(acl).save().then(this.changeStatus()).catch(console.error);
     // this.setData({
     //   draft: ''

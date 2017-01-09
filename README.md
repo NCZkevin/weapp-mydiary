@@ -2,5 +2,5 @@
 微信小程序版
 
 
-
+** 欢迎大家starstar **
 # LICENSE AGPLv3
