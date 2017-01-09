@@ -35,14 +35,11 @@ Page({
   setDiary: function(diarys) {
     for(var i = 0;i<diarys.length;i++){
       var time = diarys[i].createdAt;
-      diarys[i].day = time.getDate();
-      diarys[i].month = 5;
-      console.log(diarys[i].day);
-      diarys[i].createdAt = time.getFullYear();
-      diarys[i].day = time.getDate();
-      console.log(diarys[i]);
+      // diarys[i].day = time.getDate();
+      // diarys[i].month = 5;
+      console.log(time.toTimeString());
+      diarys[i].createdAt = time.toTimeString().substring(0,5);
     }
-    console.log(diarys);
     this.setData({
       diarys
     })

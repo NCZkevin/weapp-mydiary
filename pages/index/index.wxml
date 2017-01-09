@@ -14,22 +14,16 @@
       </view>
     </view>
   </view>
-  <view class="diary-list">
-    <!--<block wx:for="{{diarys}}">
-        <view class="flex-wrap todo">
-          <text ontap="editTodo">
-            {{todo.title}}
-          </text>
-        </view>
-      </block>-->
+  <scroll-view class="diary-list" scroll-y="true" style="height: 1000rpx;">
     <block wx:for = "{{diarys}}" wx:for-item="diary">
+    <view class="day-num">{{diary.month}}</view>
       <view class="diary-item" bindtap="showDiary">
         <view class="diary-time">
           <view class="day">{{diary.day}}</view>
-          <view class="month">{{diary.month}}</view>
+          <view class="month">{{diary.week}}</view>
         </view>
         <view class="diary-detail">
-          <view class="diary-dtime">19:17</view>
+          <view class="diary-dtime">{{diary.createdAt}}</view>
           <view class="diary-title">{{diary.title}}</view>
           <view class="diary-content">{{diary.content}}</view>
         </view>
@@ -76,7 +70,7 @@
         </view>
       </view>
     </block>-->
-  </view>
+  </scroll-view>
   <view class="tool-list">
     <view class="content">
       <view class="left-tool">

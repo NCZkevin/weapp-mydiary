@@ -1,4 +1,9 @@
 /**index.wxss**/
+.day-num {
+    font-size: 72rpx;
+    text-align: center;
+    color: #FFFFFF;
+}
 
 .tool-list {
     position: fixed;

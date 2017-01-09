@@ -86,7 +86,7 @@ textarea {
 }*/
 
 .right-tool {
-    flex: 0 0 230rpx;
+    flex: 0 0 160rpx;
 }
 
 .savetext {
