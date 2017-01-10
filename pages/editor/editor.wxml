@@ -15,9 +15,9 @@
   <view class="editor">
     <view class="e-time">
         <image src="../../images/ic_settings_white_24dp.png" class="i-setting" ontap="setting"></image>
-      <view class="e-month">一月</view>
-      <view class="e-day">28</view>
-      <view class="e-week">星期日</view>
+      <view class="e-month">{{time.month}}月</view>
+      <view class="e-day">{{time.day}}</view>
+      <view class="e-week">星期{{time.week}}</view>
     </view>
     <view class="main">
       <view class="e-title">

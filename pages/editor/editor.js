@@ -1,6 +1,7 @@
 // pages/editor/editor.js
 const AV = require('../../utils/av-weapp-min.js');
 const Diary = require('../../model/diary');
+const Util = require('../../utils/util.js');
 Page({
   data: {
     array: ['/images/ic_mood_happy.png', '/images/ic_mood_soso.png', '/images/ic_mood_unhappy.png'],
@@ -110,6 +111,10 @@ Page({
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
+    var time = Util.nowTime();
+    this.setData({
+      time: time
+    });
   },
   onReady: function () {
     // 页面渲染完成

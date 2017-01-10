@@ -28,9 +28,9 @@
   height: 100%;
 }
 
-.main {
+/*.main {
     font-size: 48rpx;
-}
+}*/
 
 .e-title {
     border: 2rpx solid #EFF2F7;

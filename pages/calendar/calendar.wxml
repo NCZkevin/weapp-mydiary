@@ -13,8 +13,8 @@
     </view>
   </view>
   <view class="calendar">
-    <view class="c-month">一月</view>
-    <view class="c-day">28</view>
-    <view class="c-week">星期日</view>
+    <view class="c-month">{{time.month}}月</view>
+    <view class="c-day">{{time.day}}</view>
+    <view class="c-week">星期{{time.week}}</view>
   </view>
 </view>
