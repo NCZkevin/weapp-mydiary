@@ -15,7 +15,7 @@
     </view>
   </view>
   <scroll-view class="diary-list" scroll-y="true" style="height: 1000rpx;">
-    <block wx:for = "{{diarys}}" wx:for-item="diary">
+    <block wx:for = "{{diarys}}" wx:for-item="diary" wx:key="{{diary.objectId}}">
     <view class="day-num">{{diary.month}}</view>
       <view class="diary-item" bindtap="showDiary">
         <view class="diary-time">

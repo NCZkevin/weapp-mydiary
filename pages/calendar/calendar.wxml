@@ -8,7 +8,7 @@
         <navigator url="/pages/calendar/calendar" open-type="redirect">日历</navigator>
       </view>
       <view class="swiper-tab-list1">
-        <navigator url="/pages/editor/editor" open-type="redirect">今天</navigator>
+        <navigator url="/pages/editor/editor" open-type="redirect">日记</navigator>
       </view>
     </view>
   </view>
