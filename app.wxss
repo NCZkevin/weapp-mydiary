@@ -13,6 +13,14 @@
   background-attachment: fixed;
 }
 
+.boy {
+    background-image: url("http://7xs3h7.com1.z0.glb.clouddn.com/theme_bg_taki1.png");
+}
+
+.girl{
+  background-image: url("http://7xs3h7.com1.z0.glb.clouddn.com/theme_bg_mitsuha.png");
+}
+
 .top-tab {
   background: #FFFFFF;
   height: 80rpx;
